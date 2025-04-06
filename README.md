@@ -5,7 +5,7 @@
 ### Internet 
   1. Interconnected network.  </br>
   2. The internet is a global network of interconnected computers and devices that communicate with each other to share information, resources, and services.</br>
-  3. **Conncetion** :- 1) Wired  2) Wireless
+  3. **Connection** :- 1) Wired  2) Wireless
 
 ### History
   <ul>
@@ -45,10 +45,7 @@
   </ul>
 
 ### Protocol
-  
-  
-  
-  
+
   
 
 
