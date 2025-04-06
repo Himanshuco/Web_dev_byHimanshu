@@ -29,6 +29,15 @@
     <li><b>Request</b> :- ( get , put , post , delete ,etc)</li>
   </ul>
 
+  ```mermaid
+graph TD;
+    A[Client] -->|Sends Request| B[Server]
+    B -->|Processes Request| C[Server Logic]
+    C -->|Fetches Data| D[Database]
+    D -->|Returns Data| C
+    C -->|Sends Response| A[Client]
+```
+
 ### ISP(Internet Service Provider)
   <ul>
     <li>An organization that provides internet access to individuals, businesses and other organizations. They connect us to the internet, either through wired connections (like fiber or cable) or wireless methods (like Wi-Fi or mobile data).</li>
