@@ -9,15 +9,6 @@
   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250121190307475528/How-HTML-Works-2.webp">
 </ul>
 
-```mermaid
-graph TD;
-    A[Client] -->|Sends Request| B[Server]
-    B -->|Processes Request| C[Server Logic]
-    C -->|Fetches Data| D[Database]
-    D -->|Returns Data| C
-    C -->|Sends Response| A[Client]
-```
-
 ## Basics of HTML
 
 ### HTML Tags :-
