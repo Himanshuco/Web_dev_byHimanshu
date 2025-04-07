@@ -22,6 +22,7 @@ graph TD;
 
 ### HTML Tags :-
   <ul>
+    <li>Syntax used to create elements.</li>
     <li>An HTML tag is the raw syntax used to define elements in an HTML document.</li>
     <li>Tags typically come in pairs:-</li>
     <ol>
@@ -35,6 +36,7 @@ graph TD;
 
 ### Html Elements :-
 <ul>
+  <li> Building block of HTML. </li>
   <li>An element refers to the entire structure that includes both the opening and closing tags as well as the content inside. </li>
   <LI>The element defines a section of the web page's content and how it should be treated or displayed.</LI>
   <LI>An HTML element consists of:</LI>
@@ -44,6 +46,160 @@ graph TD;
       <li>Closing tag</li>
     </OL>
 </ul>
+
+### Boilerplate code::-
+  ```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <!--Content--> 
+</body>
+</html>
+```
+
+**html:** The root element that wraps all the content on the page.
+
+**head:** Contains metadata about the webpage (such as title, charset, and links to external files like stylesheets or scripts).
+
+**body:** Contains all the visible content of the webpage.
+
+**header:** Typically used for introductory content, like the website name or navigation.
+
+**footer:** Generally used for closing content, such as copyright information or links.
+
+### Common HTML Elements :-
+
+<ol>
+  <li> <B>h1 to h6:</B> These tags are used to define headings. h1 is the most important and largest, while h6 is the least important and smallest.</li>
+
+
+  ```HTML
+    <h1>Himanshu 1</h1>
+    <h2>Himanshu 2</h2>
+    <h3>Himanshu 3</h3>
+    <h4>Himanshu 4</h4>
+    <h5>Himanshu 5</h5>
+    <h6>Himanshu 6</h6>
+```
+ **OUTPUT:-**
+    <h1>Himanshu 1</h1>
+    <h2>Himanshu 2</h2>
+    <h3>Himanshu 3</h3>
+    <h4>Himanshu 4</h4>
+    <h5>Himanshu 5</h5>
+    <h6>Himanshu 6</h6>
+
+
+<LI><b>p:</b> Defines a paragraph of text.</LI>
+
+```HTML
+  <p>This is a paragraph of text.</p>
+```
+
+ **OUTPUT:-**
+<p>This is a paragraph of text.</p>
+
+
+<LI><b>a:</b> Defines a hyperlink. It requires the href attribute to point to the target URL.</LI>
+
+```HTML
+<a href="https://example.com">Click here to visit Example</a>
+```
+ **OUTPUT:-**
+ <a href="https://example.com">Click here to visit Example</a>
+
+ <LI><b>ul:</b> Defines an unordered list (bulleted list).</LI>
+
+ ```HTML
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+```
+ **OUTPUT:-**
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+<LI><b>ol:</b> Defines an ordered list (numbered list).</LI>
+
+```HTML
+<ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+</ol>
+```
+ **OUTPUT:-**
+<ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+</ol>
+</ol>
+
+###  Structuring Content with Semantic HTML: 
+
+  <li>Semantic HTML refers to using HTML elements that clearly describe their meaning both to the browser and the developer. This improves accessibility, SEO, and the readability of the code.</li>
+ 
+```mermaid
+graph TB
+    A[<b style="color:white">header</b><br/><i style="color:white">Defines introductory content or navigational links</i>] --> B[<b style="color:white">footer</b><br/><i style="color:white">Represents footer content, like copyright information</i>]
+    A --> C[<b style="color:white">main</b><br/><i style="color:white">Represents the main content of the page</i>]
+    B --> D[<b style="color:white">section</b><br/><i style="color:white">Represents a section of content</i>]
+    D --> E[<b style="color:white">article</b><br/><i style="color:white">Represents a self-contained piece of content, like a blog post</i>]
+    C --> F[<b style="color:white">aside</b><br/><i style="color:white">Represents content that is tangentially related to the main content</i>]
+    C --> G[<b style="color:white">nav</b><br/><i style="color:white">Represents a section of navigation links</i>]
+
+    style A fill:#FF6347,stroke:#FF6347,stroke-width:2px
+    style B fill:#4682B4,stroke:#4682B4,stroke-width:2px
+    style C fill:#32CD32,stroke:#32CD32,stroke-width:2px
+    style D fill:#8A2BE2,stroke:#8A2BE2,stroke-width:2px
+    style E fill:#FFD700,stroke:#FFD700,stroke-width:2px
+    style F fill:#FF4500,stroke:#FF4500,stroke-width:2px
+    style G fill:#FF8C00,stroke:#FF8C00,stroke-width:2px
+
+
+```
+
+### Nesting
+<li>Nesting: Refers to placing one HTML element inside another. For example, a list (ul) can contain list items (li).</li>
+
+```HTML
+<ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+</ul>
+```
+
+ **OUTPUT:-**
+ <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+</ul>
+
+### Attributes
+
+<li>Attributes: Provide additional information about an element. For example, the href attribute specifies the destination of a link in an anchor tag (a).</li>
+
+```Html
+<a href="https://example.com">Visit Example</a>
+```
+
+
+
+
+
+
+
+
     
 
 
