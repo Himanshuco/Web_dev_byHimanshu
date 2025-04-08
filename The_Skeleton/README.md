@@ -348,8 +348,102 @@ Example: Cell spanning 2 rows
   </tr>
 </table>
 
+**More Examples with Tables Attributes :-**
+
+```HTML
+<table border="9" style="border-collapse: collapse;">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>22</td>
+  </tr>
+</table>
+```
+
+**OUTPUT :-**
+<table border="9" style="border-collapse: collapse;">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>22</td>
+  </tr>
+</table>
 
 
+<hr/>
+
+### HTML Forms 
+
+<li>HTML forms are used to <b>collect user input</b>. A form contains form elements like input fields, checkboxes, radio buttons, submit buttons, etc.</li>
+
+**Creating Forms**
+
+Use the `<form>` element to create a form, and nest elements like `<input>`, `<textarea>`, `<select>`, and `<button>` inside it.
+
+```html
+<form action="/submit" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="username" required>
+
+  <label for="comment">Comment:</label>
+  <textarea id="comment" name="usercomment"></textarea>
+
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>
+```
+
+**Form Submission**
+
+<ol>
+  <li>
+    <strong>GET Method</strong>
+    <ul>
+      <li>Data is visible in the URL</li>
+      <li>Good for searching, filtering</li>
+      <li>Limited data capacity</li>
+      <li>Not secure</li>
+    </ul>
+  </li>
+  <li>
+    <strong>POST Method</strong>
+    <ul>
+      <li>Data is hidden in the body</li>
+      <li>Good for secure submissions (login, forms)</li>
+      <li>Larger payload allowed</li>
+      <li>More secure than GET</li>
+    </ul>
+  </li>
+</ol>
+
+```mermaid
+flowchart TD
+    A[User Fills Out Form] --> B{Form Method}
+    
+    B -->|GET| C1[Data added to URL<br/>Example: /submit?name=John]
+    C1 --> D1[Request Sent to Server]
+    D1 --> E1[Server Processes Data]
+    E1 --> F1[Response Sent Back]
+
+    B -->|POST| C2[Data sent in HTTP Body]
+    C2 --> D2[Request Sent to Server]
+    D2 --> E2[Server Processes Data]
+    E2 --> F2[Response Sent Back]
+
+    style C1 fill:#f9f,stroke:#333,stroke-width:1px
+    style C2 fill:#bbf,stroke:#333,stroke-width:1px
+```
 
 
 
