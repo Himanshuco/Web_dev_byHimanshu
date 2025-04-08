@@ -184,6 +184,172 @@ graph TB
 <a href="https://example.com">Visit Example</a>
 ```
 
+<hr/>
+
+### HTML Tables
+
+<li>HTML tables allow you to organize data into rows and columns.</li>
+
+<b>Basic Table Structure</b>
+
+```html
+<table>
+  <tr>
+    <th>Heading 1</th>
+    <th>Heading 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</table>
+```
+
+ **OUTPUT:-**
+
+ <table>
+  <tr>
+    <th>Heading 1</th>
+    <th>Heading 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</table>
+
+
+<ol>
+  <li><b>table:</b> Starts the table.</li>
+  <li><b>tr:</b> Table row.</li>
+  <li><b>th:</b> Table heading (bold & centered by default).</li>
+  <li><b>td:</b> Table data cell.</li>
+</ol>
+
+<li>Always include thead, tbody, and tfoot for better readability and accessibility.</li>
+
+```HTML
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pen</td>
+      <td>$1</td>
+    </tr>
+    <tr>
+      <td>Notebook</td>
+      <td>$3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>$4</td>
+    </tr>
+  </tfoot>
+</table>
+
+```
+
+**OUTPUT:-**
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pen</td>
+      <td>$1</td>
+    </tr>
+    <tr>
+      <td>Notebook</td>
+      <td>$3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>$4</td>
+    </tr>
+  </tfoot>
+</table>
+
+### <B>`colspan` and `rowspan` in HTML Tables</b>
+
+In HTML tables, `colspan` and `rowspan` are attributes used to **merge cells across columns or rows**, respectivel
+
+🔹 `colspan` – Merge Columns
+
+The `colspan` attribute allows a cell to span across **multiple columns**.
+
+Example: Cell spanning 2 columns
+
+```html
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td colspan="2">Himanshu (merged columns)</td>
+  </tr>
+</table>
+
+```
+
+**OUTPUT :-**
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td colspan="2">Himanshu  (merged columns)</td>
+  </tr>
+</table>
+
+
+🔸 `rowspan` – Merge Rows
+
+The `rowspan` attribute allows a cell to span across **multiple rows**.
+
+Example: Cell spanning 2 rows
+
+```html
+<table border="1">
+  <tr>
+    <th rowspan="2">Name</th>
+    <td>Himanshu</td>
+  </tr>
+  <tr>
+    <td>Kapil</td>
+  </tr>
+</table>
+```
+
+**OUTPUT :-**
+<table border="1">
+  <tr>
+    <th rowspan="2">Name</th>
+    <td>Himanshu</td>
+  </tr>
+  <tr>
+    <td>Kapil</td>
+  </tr>
+</table>
+
+
+
 
 
 
